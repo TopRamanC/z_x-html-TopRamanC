@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Program: x-html
+# Usage: x-html filename.html
+
+FILENAME="$1"
+X_SIZE=1024
+
+DATE="$(date)"
+CONTENT_SIZE=$(stat "%z" FILENAME)
+
+if [[ ${CONTENT_SIZE} -gt ${X_SIZE} ]] ; then
+        HTML_TYPE="application/x-html"
+        (cat ${FILENAME} | compress - | base64)
+else
+        HTML_TYPE="text/html"
+fi
+
+echo HTTP/1.1 200 Okay
+echo Server: premortal/cit-384/${USER}
+echo Date: ${DATE}
+echo Content-type: ${HTML_TYPE}
+echo Content-length: ${CONTENT_SIZE}
+echo ""
