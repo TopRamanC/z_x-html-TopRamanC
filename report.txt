@@ -1,0 +1,15 @@
+	```
+    Name: Ramanpreet Chadha
+    Lab Name: z_x-html
+    Date Assigned: Sep 29, 2021
+    Date Completed: Oct 3, 2021
+    Status:  Good Progress <!-- select one -->
+    Outstanding Issues:
+    Struggled with http headers and the structure of the response headers. 	<!-- insert description -->
+    
+    Major Impediments:
+    Lacked the knowledge about http headers and reponse.	<!-- insert description -->
+
+    Feedback Comments:
+    It was a hard lab and I lacked the knowledge to solve it.    <!-- insert description --> 
+    ```
